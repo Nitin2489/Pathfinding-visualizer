@@ -9,7 +9,9 @@
 #include <thread>
 #include <cstdlib> // For rand(), srand()
 #include <ctime>   // For time()
+#ifdef _WIN32
 #include <windows.h> // For Windows compatibility
+#endif
 using namespace std;
 
 // Constants
