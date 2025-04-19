@@ -17,25 +17,35 @@ jobs:
           - os: ubuntu-latest
             c_compiler: gcc
             cxx_compiler: g++
+            shell: bash
           - os: windows-latest
             c_compiler: cl
             cxx_compiler: cl
+            shell: cmd
           - os: macos-latest
             c_compiler: clang
             cxx_compiler: clang++
-    
+            shell: bash
+
     steps:
     - uses: actions/checkout@v3
-    
+
+    - name: Set up MSVC environment (Windows only)
+      if: matrix.os == 'windows-latest'
+      uses: ilammy/msvc-dev-cmd@v1
+
     - name: Configure CMake
       run: |
-        cmake -S ${{github.workspace}} -B ${{github.workspace}}/build \
-              -DCMAKE_C_COMPILER=${{matrix.c_compiler}} \
-              -DCMAKE_CXX_COMPILER=${{matrix.cxx_compiler}}
-      
+        cmake -S ${{ github.workspace }} -B ${{ github.workspace }}/build \
+              -DCMAKE_C_COMPILER=${{ matrix.c_compiler }} \
+              -DCMAKE_CXX_COMPILER=${{ matrix.cxx_compiler }}
+      shell: ${{ matrix.shell }}
+
     - name: Build
-      run: cmake --build ${{github.workspace}}/build
-      
+      run: cmake --build ${{ github.workspace }}/build
+      shell: ${{ matrix.shell }}
+
     - name: Test
-      working-directory: ${{github.workspace}}/build
+      working-directory: ${{ github.workspace }}/build
       run: ctest
+      shell: ${{ matrix.shell }}
