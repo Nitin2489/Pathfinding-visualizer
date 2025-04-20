@@ -2,33 +2,6 @@
 
 A C++ console-based application that visualizes common pathfinding algorithms on a 2D grid.
 
-## 🎥 Demo
-
-Here's a live preview of the visualizer in action:
-
-![Pathfinding Demo](assets/pathfinding-demo.gif)
-
----
-
-## 📸 Screenshots
-
-### 🔹 Main Menu
-![Main Menu](assets/menu.png)
-
-### 🔹 Dijkstra's Algorithm 
-![Dijkstra](assets/dijkstra.png)
-
-### 🔹 DFS 
-![Final Path - DFS](assets/DFS.png)
-
-### 🔹 BFS 
-![BFS Search](assets/BFS.png)
-
-### 🔹 A* 
-![A* Search](assets/A_star.png)
-
----
-
 ## Features
 
 - Interactive console visualization with ANSI color codes
