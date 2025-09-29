@@ -46,7 +46,7 @@ The visualizer shows the progress of algorithms with colored cells:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/pathfinding-visualizer.git
+git clone https://github.com/Nitin2489/pathfinding-visualizer.git
 cd pathfinding-visualizer
 ```
 
