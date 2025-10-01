@@ -44,3 +44,13 @@ jobs:
     - name: Build
       run: cmake --build ${{ github.workspace }}/build
       shell: ${{ matrix.shell }}
+
+    - name: Run basic check
+      run: |
+        cd ${{ github.workspace }}/build
+        if [ -f PathfindingVisualizer ]; then
+          ./PathfindingVisualizer || true
+        elif [ -f Debug/PathfindingVisualizer.exe ]; then
+          ./Debug/PathfindingVisualizer.exe || true
+        fi
+      shell: ${{ matrix.shell }}
