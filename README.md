@@ -4,7 +4,7 @@ A C++ console-based application that visualizes common pathfinding algorithms on
 
 ## Features
 
-- Interactive console visualization with ANSI color codes
+- Interactive console visualization with Windows Console API 
 - Multiple pathfinding algorithms:
   - Dijkstra's Algorithm
   - A* Search Algorithm
