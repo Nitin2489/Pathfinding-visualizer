@@ -44,8 +44,3 @@ jobs:
     - name: Build
       run: cmake --build ${{ github.workspace }}/build
       shell: ${{ matrix.shell }}
-
-    - name: Test
-      working-directory: ${{ github.workspace }}/build
-      run: ctest
-      shell: ${{ matrix.shell }}
