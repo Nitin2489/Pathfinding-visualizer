@@ -40,7 +40,14 @@ struct Node {
                          distance(numeric_limits<int>::max()),
                          parent({-1, -1}) {}
 };
-
+struct SearchMetrics {
+    bool pathFound = false;
+    int nodesDiscovered = 0;
+    int nodesExpanded = 0;
+    int pathLength = 0;
+    int peakFrontierSize = 0;
+    double executionTimeMs = 0.0;
+};
 
 class Grid {
 private:
