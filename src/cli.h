@@ -14,7 +14,7 @@ enum class Mode { Interactive, Benchmark, Help };
 
 // Upper bounds accepted from the command line.
 constexpr int kMaxDimension = 10000;
-constexpr long long kMaxCells = 10000000;  // bounds per-search memory (see README "Limitations")
+constexpr long long kMaxCells = 10000000;  // bounds per-search memory (see docs/benchmark-methodology.md §13)
 static_assert(kMaxCells <= Grid::kMaxCells, "CLI cell limit must not exceed what Grid accepts");
 constexpr int kMaxRuns = 100000;
 constexpr int kMaxGrids = 100000;

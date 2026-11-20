@@ -97,7 +97,7 @@ std::string validateConfig(const BenchmarkConfig& config);
 // that spreadsheet tools cannot represent exactly).
 std::vector<std::string> configWarnings(const BenchmarkConfig& config);
 
-// Named preset suites (see README): "baseline", "density",
+// Named preset suites (see docs/benchmark-methodology.md §2): "baseline", "density",
 // "density-corners", "size", "size-corners", "maze", "terrain", "all".
 bool buildSuite(const std::string& name, std::vector<Scenario>& out);
 const std::vector<std::string>& suiteNames();

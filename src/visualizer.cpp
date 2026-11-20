@@ -157,7 +157,7 @@ int runInteractive(std::uint64_t seed) {
                   << "7. Quit\n"
                   << "8. Adjust Animation Speed\n"
                   << "9. Generate Maze\n"
-                  << "10. Generate Random Terrain (weighted: ~ sand 3, W water 5, ^ mountain 10)\n"
+                  << "10. Generate Random Terrain (cost: ':' sand 3, '~' water 5, '^' mountain 10)\n"
                   << "Enter your choice: " << std::flush;
 
         int choice = 0;
