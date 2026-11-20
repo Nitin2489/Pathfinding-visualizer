@@ -1,0 +1,13 @@
+scenario_id,scenario_type,rows,columns,obstacle_density,terrain_density,placement,algorithm_a,algorithm_b,timing,grids_compared,grids_excluded,ratio_a_over_b_median,ratio_a_over_b_mean,ratio_a_over_b_q1,ratio_a_over_b_q3,ratio_a_over_b_iqr,ratio_a_over_b_geomean,a_faster_fraction
+random_100x100_obs0_ter0_corners,random,100,100,0,0,corners,dijkstra,astar,search,50,0,30.255194,31.012166,29.768857,30.780290,1.011432,30.859186,0.0000
+random_100x100_obs0_ter0_corners,random,100,100,0,0,corners,dijkstra,astar,end_to_end,50,0,25.604702,26.237295,25.227861,26.089721,0.861860,26.117657,0.0000
+random_100x100_obs0_ter0_corners,random,100,100,0,0,corners,dijkstra,bfs,search,50,0,8.947931,9.140756,8.822665,9.122054,0.299389,9.098363,0.0000
+random_100x100_obs0_ter0_corners,random,100,100,0,0,corners,dijkstra,bfs,end_to_end,50,0,8.871424,9.060646,8.741610,9.046692,0.305082,9.018639,0.0000
+random_100x100_obs0_ter0_corners,random,100,100,0,0,corners,dijkstra,dfs,search,50,0,152.839177,154.772150,149.425221,159.233099,9.807879,154.476081,0.0000
+random_100x100_obs0_ter0_corners,random,100,100,0,0,corners,dijkstra,dfs,end_to_end,50,0,116.005657,117.807052,113.263847,120.638247,7.374400,117.570981,0.0000
+random_100x100_obs0_ter0_corners,random,100,100,0,0,corners,astar,bfs,search,50,0,0.296641,0.295239,0.291625,0.304006,0.012381,0.294835,1.0000
+random_100x100_obs0_ter0_corners,random,100,100,0,0,corners,astar,bfs,end_to_end,50,0,0.346816,0.345718,0.340790,0.354055,0.013265,0.345308,1.0000
+random_100x100_obs0_ter0_corners,random,100,100,0,0,corners,astar,dfs,search,50,0,5.053747,5.015409,4.951288,5.165571,0.214284,5.005838,0.0000
+random_100x100_obs0_ter0_corners,random,100,100,0,0,corners,astar,dfs,end_to_end,50,0,4.519442,4.508926,4.458248,4.645703,0.187455,4.501590,0.0000
+random_100x100_obs0_ter0_corners,random,100,100,0,0,corners,bfs,dfs,search,50,0,17.061815,17.012206,16.629944,17.474293,0.844349,16.978448,0.0000
+random_100x100_obs0_ter0_corners,random,100,100,0,0,corners,bfs,dfs,end_to_end,50,0,13.014290,13.059189,12.734419,13.404990,0.670571,13.036444,0.0000

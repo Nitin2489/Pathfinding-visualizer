@@ -1,0 +1,13 @@
+scenario_id,scenario_type,rows,columns,obstacle_density,terrain_density,placement,algorithm_a,algorithm_b,timing,grids_compared,grids_excluded,ratio_a_over_b_median,ratio_a_over_b_mean,ratio_a_over_b_q1,ratio_a_over_b_q3,ratio_a_over_b_iqr,ratio_a_over_b_geomean,a_faster_fraction
+random_200x200_obs0.2_ter0_corners,random,200,200,0.2,0,corners,dijkstra,astar,search,20,0,7.139300,6.724519,5.019522,8.667988,3.648466,5.252546,0.1000
+random_200x200_obs0.2_ter0_corners,random,200,200,0.2,0,corners,dijkstra,astar,end_to_end,20,0,6.884225,6.454338,4.883436,8.349111,3.465674,5.069582,0.1000
+random_200x200_obs0.2_ter0_corners,random,200,200,0.2,0,corners,dijkstra,bfs,search,20,0,4.530431,4.543528,4.434006,4.735251,0.301244,4.537351,0.0000
+random_200x200_obs0.2_ter0_corners,random,200,200,0.2,0,corners,dijkstra,bfs,end_to_end,20,0,4.519043,4.530608,4.422838,4.723940,0.301102,4.524378,0.0000
+random_200x200_obs0.2_ter0_corners,random,200,200,0.2,0,corners,dijkstra,dfs,search,20,0,12.698391,12.704697,10.824471,15.039369,4.214898,11.509532,0.0000
+random_200x200_obs0.2_ter0_corners,random,200,200,0.2,0,corners,dijkstra,dfs,end_to_end,20,0,12.436890,12.417451,10.659005,14.672509,4.013504,11.280481,0.0000
+random_200x200_obs0.2_ter0_corners,random,200,200,0.2,0,corners,astar,bfs,search,20,0,0.634277,1.771810,0.521317,0.904976,0.383659,0.863838,0.8000
+random_200x200_obs0.2_ter0_corners,random,200,200,0.2,0,corners,astar,bfs,end_to_end,20,0,0.654350,1.791592,0.541178,0.927006,0.385828,0.892456,0.7500
+random_200x200_obs0.2_ter0_corners,random,200,200,0.2,0,corners,astar,dfs,search,20,0,1.991377,2.615211,1.567775,2.710744,1.142969,2.191229,0.0500
+random_200x200_obs0.2_ter0_corners,random,200,200,0.2,0,corners,astar,dfs,end_to_end,20,0,2.017717,2.639724,1.604462,2.834384,1.229922,2.225130,0.0500
+random_200x200_obs0.2_ter0_corners,random,200,200,0.2,0,corners,bfs,dfs,search,20,0,2.989576,2.786894,2.347978,3.276513,0.928535,2.536619,0.1000
+random_200x200_obs0.2_ter0_corners,random,200,200,0.2,0,corners,bfs,dfs,end_to_end,20,0,2.929999,2.731271,2.316211,3.208475,0.892265,2.493266,0.1000

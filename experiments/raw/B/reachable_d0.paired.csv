@@ -1,0 +1,13 @@
+scenario_id,scenario_type,rows,columns,obstacle_density,terrain_density,placement,algorithm_a,algorithm_b,timing,grids_compared,grids_excluded,ratio_a_over_b_median,ratio_a_over_b_mean,ratio_a_over_b_q1,ratio_a_over_b_q3,ratio_a_over_b_iqr,ratio_a_over_b_geomean,a_faster_fraction
+random_100x100_obs0_ter0_reachable,random,100,100,0,0,reachable,dijkstra,astar,search,50,0,31.619600,30.693405,23.919925,38.988561,15.068636,27.504396,0.0000
+random_100x100_obs0_ter0_reachable,random,100,100,0,0,reachable,dijkstra,astar,end_to_end,50,0,23.975865,21.532801,14.827348,27.225199,12.397852,18.477777,0.0000
+random_100x100_obs0_ter0_reachable,random,100,100,0,0,reachable,dijkstra,bfs,search,50,0,8.643860,8.291487,7.412978,9.356479,1.943502,8.171273,0.0000
+random_100x100_obs0_ter0_reachable,random,100,100,0,0,reachable,dijkstra,bfs,end_to_end,50,0,8.527687,8.114923,7.212143,9.189428,1.977284,7.981674,0.0000
+random_100x100_obs0_ter0_reachable,random,100,100,0,0,reachable,dijkstra,dfs,search,50,0,3.156222,12.174210,1.854749,5.176485,3.321736,3.100166,0.2000
+random_100x100_obs0_ter0_reachable,random,100,100,0,0,reachable,dijkstra,dfs,end_to_end,50,0,3.156364,8.960090,1.874086,5.128231,3.254145,3.068819,0.1800
+random_100x100_obs0_ter0_reachable,random,100,100,0,0,reachable,astar,bfs,search,50,0,0.273767,0.323059,0.239825,0.317408,0.077582,0.297090,0.9800
+random_100x100_obs0_ter0_reachable,random,100,100,0,0,reachable,astar,bfs,end_to_end,50,0,0.380583,0.494402,0.311798,0.488151,0.176353,0.431961,0.9600
+random_100x100_obs0_ter0_reachable,random,100,100,0,0,reachable,astar,dfs,search,50,0,0.104252,0.329644,0.058021,0.169273,0.111252,0.112715,0.9600
+random_100x100_obs0_ter0_reachable,random,100,100,0,0,reachable,astar,dfs,end_to_end,50,0,0.140197,0.348412,0.092638,0.249108,0.156470,0.166082,0.9200
+random_100x100_obs0_ter0_reachable,random,100,100,0,0,reachable,bfs,dfs,search,50,0,0.378198,1.310766,0.233323,0.548551,0.315229,0.379398,0.8800
+random_100x100_obs0_ter0_reachable,random,100,100,0,0,reachable,bfs,dfs,end_to_end,50,0,0.382709,0.989102,0.239155,0.552192,0.313038,0.384483,0.8800

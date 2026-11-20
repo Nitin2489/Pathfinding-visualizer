@@ -1,0 +1,13 @@
+scenario_id,scenario_type,rows,columns,obstacle_density,terrain_density,placement,algorithm_a,algorithm_b,timing,grids_compared,grids_excluded,ratio_a_over_b_median,ratio_a_over_b_mean,ratio_a_over_b_q1,ratio_a_over_b_q3,ratio_a_over_b_iqr,ratio_a_over_b_geomean,a_faster_fraction
+random_100x100_obs0.1_ter0_random,random,100,100,0.1,0,random,dijkstra,astar,search,100,0,16.039611,17.481743,10.783803,22.690950,11.907148,15.364147,0.0000
+random_100x100_obs0.1_ter0_random,random,100,100,0.1,0,random,dijkstra,astar,end_to_end,100,0,12.646703,13.853806,9.530497,17.343562,7.813065,12.250025,0.0000
+random_100x100_obs0.1_ter0_random,random,100,100,0.1,0,random,dijkstra,bfs,search,100,0,5.276764,5.284633,4.951700,5.601310,0.649610,5.233633,0.0000
+random_100x100_obs0.1_ter0_random,random,100,100,0.1,0,random,dijkstra,bfs,end_to_end,100,0,5.223066,5.237141,4.894558,5.557089,0.662531,5.187577,0.0000
+random_100x100_obs0.1_ter0_random,random,100,100,0.1,0,random,dijkstra,dfs,search,100,0,2.781177,11.830079,1.474994,5.731308,4.256314,3.328513,0.1400
+random_100x100_obs0.1_ter0_random,random,100,100,0.1,0,random,dijkstra,dfs,end_to_end,100,0,2.776718,9.656473,1.488251,5.683836,4.195585,3.276916,0.1300
+random_100x100_obs0.1_ter0_random,random,100,100,0.1,0,random,astar,bfs,search,100,0,0.332937,0.388927,0.237686,0.470980,0.233293,0.340639,0.9700
+random_100x100_obs0.1_ter0_random,random,100,100,0.1,0,random,astar,bfs,end_to_end,100,0,0.412373,0.477751,0.298148,0.568810,0.270661,0.423475,0.9500
+random_100x100_obs0.1_ter0_random,random,100,100,0.1,0,random,astar,dfs,search,100,0,0.170234,0.821931,0.082696,0.420903,0.338207,0.216642,0.8800
+random_100x100_obs0.1_ter0_random,random,100,100,0.1,0,random,astar,dfs,end_to_end,100,0,0.208238,0.761817,0.109733,0.462540,0.352808,0.267503,0.8700
+random_100x100_obs0.1_ter0_random,random,100,100,0.1,0,random,bfs,dfs,search,100,0,0.488286,2.168485,0.302173,1.061740,0.759567,0.635985,0.7200
+random_100x100_obs0.1_ter0_random,random,100,100,0.1,0,random,bfs,dfs,end_to_end,100,0,0.490092,1.785554,0.323535,1.056151,0.732617,0.631685,0.7200

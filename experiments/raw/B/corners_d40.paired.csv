@@ -1,0 +1,13 @@
+scenario_id,scenario_type,rows,columns,obstacle_density,terrain_density,placement,algorithm_a,algorithm_b,timing,grids_compared,grids_excluded,ratio_a_over_b_median,ratio_a_over_b_mean,ratio_a_over_b_q1,ratio_a_over_b_q3,ratio_a_over_b_iqr,ratio_a_over_b_geomean,a_faster_fraction
+random_100x100_obs0.4_ter0_corners,random,100,100,0.4,0,corners,dijkstra,astar,search,50,0,0.852202,0.857255,0.767147,0.952918,0.185771,0.849660,0.8600
+random_100x100_obs0.4_ter0_corners,random,100,100,0.4,0,corners,dijkstra,astar,end_to_end,50,0,0.953778,0.912403,0.812878,0.999183,0.186305,0.905977,0.7400
+random_100x100_obs0.4_ter0_corners,random,100,100,0.4,0,corners,dijkstra,bfs,search,50,0,3.277081,3.508635,2.884388,4.190297,1.305910,3.433178,0.0000
+random_100x100_obs0.4_ter0_corners,random,100,100,0.4,0,corners,dijkstra,bfs,end_to_end,50,0,3.327224,3.305604,3.053552,3.522996,0.469444,3.286828,0.0000
+random_100x100_obs0.4_ter0_corners,random,100,100,0.4,0,corners,dijkstra,dfs,search,50,0,2.713335,2.752258,2.409882,3.085993,0.676111,2.724988,0.0000
+random_100x100_obs0.4_ter0_corners,random,100,100,0.4,0,corners,dijkstra,dfs,end_to_end,50,0,2.669391,2.682237,2.619520,2.749448,0.129928,2.675112,0.0000
+random_100x100_obs0.4_ter0_corners,random,100,100,0.4,0,corners,astar,bfs,search,50,0,3.907969,4.177743,3.417659,4.798626,1.380967,4.040648,0.0000
+random_100x100_obs0.4_ter0_corners,random,100,100,0.4,0,corners,astar,bfs,end_to_end,50,0,3.489352,3.661332,3.296989,3.869976,0.572987,3.627939,0.0000
+random_100x100_obs0.4_ter0_corners,random,100,100,0.4,0,corners,astar,dfs,search,50,0,3.215142,3.243348,2.910339,3.502689,0.592351,3.207150,0.0000
+random_100x100_obs0.4_ter0_corners,random,100,100,0.4,0,corners,astar,dfs,end_to_end,50,0,2.812606,2.978510,2.672155,3.204712,0.532557,2.952738,0.0000
+random_100x100_obs0.4_ter0_corners,random,100,100,0.4,0,corners,bfs,dfs,search,50,0,0.817847,0.815767,0.700997,0.944045,0.243049,0.793722,0.8400
+random_100x100_obs0.4_ter0_corners,random,100,100,0.4,0,corners,bfs,dfs,end_to_end,50,0,0.816403,0.817629,0.772590,0.826886,0.054296,0.813889,0.9600

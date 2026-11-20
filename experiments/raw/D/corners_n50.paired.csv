@@ -1,0 +1,13 @@
+scenario_id,scenario_type,rows,columns,obstacle_density,terrain_density,placement,algorithm_a,algorithm_b,timing,grids_compared,grids_excluded,ratio_a_over_b_median,ratio_a_over_b_mean,ratio_a_over_b_q1,ratio_a_over_b_q3,ratio_a_over_b_iqr,ratio_a_over_b_geomean,a_faster_fraction
+random_50x50_obs0.2_ter0_corners,random,50,50,0.2,0,corners,dijkstra,astar,search,20,0,4.373736,4.282734,3.216990,5.650439,2.433449,3.204219,0.1500
+random_50x50_obs0.2_ter0_corners,random,50,50,0.2,0,corners,dijkstra,astar,end_to_end,20,0,4.224940,4.105903,3.159307,5.434820,2.275512,3.095399,0.2000
+random_50x50_obs0.2_ter0_corners,random,50,50,0.2,0,corners,dijkstra,bfs,search,20,0,3.838060,3.856005,3.616617,4.269837,0.653220,3.772972,0.0000
+random_50x50_obs0.2_ter0_corners,random,50,50,0.2,0,corners,dijkstra,bfs,end_to_end,20,0,3.803406,3.876098,3.590555,4.233517,0.642961,3.841882,0.0000
+random_50x50_obs0.2_ter0_corners,random,50,50,0.2,0,corners,dijkstra,dfs,search,20,0,12.105066,11.285016,7.164357,14.300297,7.135940,8.959524,0.0000
+random_50x50_obs0.2_ter0_corners,random,50,50,0.2,0,corners,dijkstra,dfs,end_to_end,20,0,11.524955,10.706398,7.019027,13.617903,6.598876,8.589098,0.0000
+random_50x50_obs0.2_ter0_corners,random,50,50,0.2,0,corners,astar,bfs,search,20,0,0.937776,1.962591,0.688984,1.300844,0.611860,1.177501,0.6500
+random_50x50_obs0.2_ter0_corners,random,50,50,0.2,0,corners,astar,bfs,end_to_end,20,0,0.956454,2.026938,0.711880,1.312873,0.600993,1.241159,0.6000
+random_50x50_obs0.2_ter0_corners,random,50,50,0.2,0,corners,astar,dfs,search,20,0,2.850748,3.001060,2.113659,3.550711,1.437052,2.796164,0.0000
+random_50x50_obs0.2_ter0_corners,random,50,50,0.2,0,corners,astar,dfs,end_to_end,20,0,2.808485,2.969258,2.111673,3.474752,1.363078,2.774795,0.0000
+random_50x50_obs0.2_ter0_corners,random,50,50,0.2,0,corners,bfs,dfs,search,20,0,2.931582,2.848800,1.892733,3.646579,1.753845,2.374660,0.1500
+random_50x50_obs0.2_ter0_corners,random,50,50,0.2,0,corners,bfs,dfs,end_to_end,20,0,2.839184,2.702325,1.868441,3.487921,1.619480,2.235648,0.2000

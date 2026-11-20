@@ -1,0 +1,13 @@
+scenario_id,scenario_type,rows,columns,obstacle_density,terrain_density,placement,algorithm_a,algorithm_b,timing,grids_compared,grids_excluded,ratio_a_over_b_median,ratio_a_over_b_mean,ratio_a_over_b_q1,ratio_a_over_b_q3,ratio_a_over_b_iqr,ratio_a_over_b_geomean,a_faster_fraction
+random_1600x1600_obs0.2_ter0_corners,random,1600,1600,0.2,0,corners,dijkstra,astar,search,5,0,7.859363,7.595631,6.615546,8.170617,1.555072,7.540476,0.0000
+random_1600x1600_obs0.2_ter0_corners,random,1600,1600,0.2,0,corners,dijkstra,astar,end_to_end,5,0,7.183597,7.037862,6.213179,7.531337,1.318158,6.994203,0.0000
+random_1600x1600_obs0.2_ter0_corners,random,1600,1600,0.2,0,corners,dijkstra,bfs,search,5,0,5.411353,5.424794,5.341549,5.524909,0.183360,5.423880,0.0000
+random_1600x1600_obs0.2_ter0_corners,random,1600,1600,0.2,0,corners,dijkstra,bfs,end_to_end,5,0,5.414150,5.418380,5.335566,5.509372,0.173807,5.417495,0.0000
+random_1600x1600_obs0.2_ter0_corners,random,1600,1600,0.2,0,corners,dijkstra,dfs,search,5,0,24.630853,24.320901,24.519525,24.755325,0.235800,24.263540,0.0000
+random_1600x1600_obs0.2_ter0_corners,random,1600,1600,0.2,0,corners,dijkstra,dfs,end_to_end,5,0,23.176546,22.969879,23.157597,23.308752,0.151155,22.917897,0.0000
+random_1600x1600_obs0.2_ter0_corners,random,1600,1600,0.2,0,corners,astar,bfs,search,5,0,0.676192,0.725401,0.673803,0.834089,0.160286,0.719302,1.0000
+random_1600x1600_obs0.2_ter0_corners,random,1600,1600,0.2,0,corners,astar,bfs,end_to_end,5,0,0.736178,0.780223,0.731526,0.886921,0.155394,0.774569,1.0000
+random_1600x1600_obs0.2_ter0_corners,random,1600,1600,0.2,0,corners,astar,dfs,search,5,0,3.149788,3.262944,2.772171,3.796521,1.024350,3.217773,0.0000
+random_1600x1600_obs0.2_ter0_corners,random,1600,1600,0.2,0,corners,astar,dfs,end_to_end,5,0,3.223677,3.317768,2.841391,3.818330,0.976939,3.276699,0.0000
+random_1600x1600_obs0.2_ter0_corners,random,1600,1600,0.2,0,corners,bfs,dfs,search,5,0,4.590340,4.485619,4.551699,4.674644,0.122945,4.473465,0.0000
+random_1600x1600_obs0.2_ter0_corners,random,1600,1600,0.2,0,corners,bfs,dfs,end_to_end,5,0,4.343784,4.240927,4.305154,4.378936,0.073782,4.230349,0.0000

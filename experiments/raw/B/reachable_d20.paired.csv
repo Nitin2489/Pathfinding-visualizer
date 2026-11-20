@@ -1,0 +1,13 @@
+scenario_id,scenario_type,rows,columns,obstacle_density,terrain_density,placement,algorithm_a,algorithm_b,timing,grids_compared,grids_excluded,ratio_a_over_b_median,ratio_a_over_b_mean,ratio_a_over_b_q1,ratio_a_over_b_q3,ratio_a_over_b_iqr,ratio_a_over_b_geomean,a_faster_fraction
+random_100x100_obs0.2_ter0_reachable,random,100,100,0.2,0,reachable,dijkstra,astar,search,50,0,12.243972,13.165278,7.414729,17.329151,9.914422,10.934074,0.0000
+random_100x100_obs0.2_ter0_reachable,random,100,100,0.2,0,reachable,dijkstra,astar,end_to_end,50,0,9.492709,10.798555,6.135542,14.342444,8.206902,8.888042,0.0000
+random_100x100_obs0.2_ter0_reachable,random,100,100,0.2,0,reachable,dijkstra,bfs,search,50,0,3.977218,4.016110,3.839883,4.127781,0.287897,4.007225,0.0000
+random_100x100_obs0.2_ter0_reachable,random,100,100,0.2,0,reachable,dijkstra,bfs,end_to_end,50,0,3.967970,3.983538,3.828080,4.110533,0.282453,3.975466,0.0000
+random_100x100_obs0.2_ter0_reachable,random,100,100,0.2,0,reachable,dijkstra,dfs,search,50,0,2.879165,5.803636,1.396975,4.230866,2.833891,2.301912,0.2200
+random_100x100_obs0.2_ter0_reachable,random,100,100,0.2,0,reachable,dijkstra,dfs,end_to_end,50,0,2.879412,5.569252,1.405883,4.216886,2.811003,2.388642,0.2200
+random_100x100_obs0.2_ter0_reachable,random,100,100,0.2,0,reachable,astar,bfs,search,50,0,0.336350,0.446049,0.238108,0.550314,0.312207,0.366490,0.9400
+random_100x100_obs0.2_ter0_reachable,random,100,100,0.2,0,reachable,astar,bfs,end_to_end,50,0,0.427136,0.567310,0.284058,0.640428,0.356370,0.447283,0.8800
+random_100x100_obs0.2_ter0_reachable,random,100,100,0.2,0,reachable,astar,dfs,search,50,0,0.169835,0.584067,0.103268,0.671832,0.568564,0.210526,0.8600
+random_100x100_obs0.2_ter0_reachable,random,100,100,0.2,0,reachable,astar,dfs,end_to_end,50,0,0.199316,0.611704,0.127685,0.835004,0.707319,0.268748,0.8600
+random_100x100_obs0.2_ter0_reachable,random,100,100,0.2,0,reachable,bfs,dfs,search,50,0,0.712026,1.471557,0.346788,0.998474,0.651686,0.574440,0.7400
+random_100x100_obs0.2_ter0_reachable,random,100,100,0.2,0,reachable,bfs,dfs,end_to_end,50,0,0.712673,1.413929,0.350104,0.996669,0.646565,0.600846,0.7400

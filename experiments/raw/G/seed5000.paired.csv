@@ -1,0 +1,13 @@
+scenario_id,scenario_type,rows,columns,obstacle_density,terrain_density,placement,algorithm_a,algorithm_b,timing,grids_compared,grids_excluded,ratio_a_over_b_median,ratio_a_over_b_mean,ratio_a_over_b_q1,ratio_a_over_b_q3,ratio_a_over_b_iqr,ratio_a_over_b_geomean,a_faster_fraction
+random_100x100_obs0.3_ter0_reachable,random,100,100,0.3,0,reachable,dijkstra,astar,search,50,0,4.357392,5.990598,3.003756,6.950837,3.947082,4.869520,0.0000
+random_100x100_obs0.3_ter0_reachable,random,100,100,0.3,0,reachable,dijkstra,astar,end_to_end,50,0,4.099113,5.205006,2.859264,6.239734,3.380470,4.350991,0.0000
+random_100x100_obs0.3_ter0_reachable,random,100,100,0.3,0,reachable,dijkstra,bfs,search,50,0,3.213924,3.314183,3.094853,3.364556,0.269703,3.295402,0.0000
+random_100x100_obs0.3_ter0_reachable,random,100,100,0.3,0,reachable,dijkstra,bfs,end_to_end,50,0,3.227401,3.284156,3.106852,3.365942,0.259089,3.272451,0.0000
+random_100x100_obs0.3_ter0_reachable,random,100,100,0.3,0,reachable,dijkstra,dfs,search,50,0,3.066831,3.910409,1.529275,4.799000,3.269725,2.570394,0.1400
+random_100x100_obs0.3_ter0_reachable,random,100,100,0.3,0,reachable,dijkstra,dfs,end_to_end,50,0,3.075415,3.846063,1.563571,4.772967,3.209396,2.609424,0.1400
+random_100x100_obs0.3_ter0_reachable,random,100,100,0.3,0,reachable,astar,bfs,search,50,0,0.737399,0.796928,0.474249,1.045203,0.570954,0.676741,0.7200
+random_100x100_obs0.3_ter0_reachable,random,100,100,0.3,0,reachable,astar,bfs,end_to_end,50,0,0.764583,0.873599,0.521198,1.121608,0.600410,0.752116,0.6400
+random_100x100_obs0.3_ter0_reachable,random,100,100,0.3,0,reachable,astar,dfs,search,50,0,0.617171,1.054519,0.197625,1.285578,1.087952,0.527854,0.6800
+random_100x100_obs0.3_ter0_reachable,random,100,100,0.3,0,reachable,astar,dfs,end_to_end,50,0,0.694635,1.076580,0.231784,1.304644,1.072860,0.599731,0.6800
+random_100x100_obs0.3_ter0_reachable,random,100,100,0.3,0,reachable,bfs,dfs,search,50,0,0.908648,1.205780,0.464977,1.543918,1.078941,0.779994,0.5200
+random_100x100_obs0.3_ter0_reachable,random,100,100,0.3,0,reachable,bfs,dfs,end_to_end,50,0,0.908085,1.186448,0.470851,1.532520,1.061669,0.797391,0.5200

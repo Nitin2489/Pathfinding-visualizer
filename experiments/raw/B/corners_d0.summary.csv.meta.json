@@ -1,0 +1,25 @@
+{
+  "benchmark_format_version": 2,
+  "status": "complete",
+  "program": {"version": "2.1.0", "git_commit": "3d42fc8175d67c8b0efb6ef3bf8d432580777eba", "git_dirty_at_build": "false"},
+  "build": {"compiler": "GCC 15.2.0", "cxx_standard": "201703", "build_type": "Release (NDEBUG)"},
+  "environment": {"os": "Linux", "os_release": "6.6.87.2-microsoft-standard-WSL2", "machine": "x86_64", "cpu_model": "12th Gen Intel(R) Core(TM) i5-1235U", "logical_cpus": 12, "timestamp_utc": "2026-11-20T21:33:40Z"},
+  "timer": {"clock": "std::chrono::steady_clock", "nominal_tick_ns": 1, "measured_overhead_ns": 28, "measured_granularity_ns": 26, "near_floor_threshold_ms": 0.0028},
+  "timing_methodology": {
+    "search_time_ms": "core search: from after per-cell arrays are allocated and initialised to the end of path reconstruction (frontier growth included)",
+    "end_to_end_time_ms": "one complete search call: allocation, initialisation, search, path reconstruction and freeing of the per-cell arrays",
+    "measurement": "both values come from the same call; one fresh call per timed run",
+    "excluded": "grid generation, reference validation, rendering, progress output, CSV writing",
+    "run_order": "interleaved; algorithm order rotated by run index"
+  },
+  "configuration": {"suite": null, "algorithms": ["dijkstra", "astar", "bfs", "dfs"], "base_seed": "1000", "grids_per_scenario": 50, "runs_per_grid": 4, "warmup_runs": 1, "seed_rule": "grid i uses seed base_seed + i",
+    "rng_streams": "obstacles: seed; endpoints: splitmix64-derived stream 1; terrain: stream 2",
+    "max_placement_attempts": 10000,
+    "scenarios": [
+      {"scenario_id": "random_100x100_obs0_ter0_corners", "type": "random", "rows": 100, "columns": 100, "obstacle_density": 0, "terrain_density": 0, "placement": "corners"}
+    ]
+  },
+  "validation": {"oracle": "independent reachability BFS and Dial bucket-queue minimum cost (validation.cpp)", "invalid_runs": 0, "generation_failures": 0, "generation_errors": []},
+  "warnings": [],
+  "outputs": ["experiments/raw/B/corners_d0.runs.csv", "experiments/raw/B/corners_d0.grid.csv", "experiments/raw/B/corners_d0.summary.csv", "experiments/raw/B/corners_d0.paired.csv"]
+}

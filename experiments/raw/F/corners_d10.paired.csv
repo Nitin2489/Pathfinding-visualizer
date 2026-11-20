@@ -1,0 +1,13 @@
+scenario_id,scenario_type,rows,columns,obstacle_density,terrain_density,placement,algorithm_a,algorithm_b,timing,grids_compared,grids_excluded,ratio_a_over_b_median,ratio_a_over_b_mean,ratio_a_over_b_q1,ratio_a_over_b_q3,ratio_a_over_b_iqr,ratio_a_over_b_geomean,a_faster_fraction
+random_100x100_obs0.1_ter0_corners,random,100,100,0.1,0,corners,dijkstra,astar,search,100,0,6.961582,7.103477,5.239359,8.663063,3.423704,6.184291,0.0400
+random_100x100_obs0.1_ter0_corners,random,100,100,0.1,0,corners,dijkstra,astar,end_to_end,100,0,6.754582,6.800402,5.079502,8.264579,3.185077,5.951536,0.0400
+random_100x100_obs0.1_ter0_corners,random,100,100,0.1,0,corners,dijkstra,bfs,search,100,0,5.829598,5.794384,5.686381,6.063739,0.377358,5.772494,0.0000
+random_100x100_obs0.1_ter0_corners,random,100,100,0.1,0,corners,dijkstra,bfs,end_to_end,100,0,5.814134,5.772108,5.666950,6.033150,0.366200,5.750680,0.0000
+random_100x100_obs0.1_ter0_corners,random,100,100,0.1,0,corners,dijkstra,dfs,search,100,0,15.795559,18.160596,13.383815,20.009511,6.625696,16.324407,0.0000
+random_100x100_obs0.1_ter0_corners,random,100,100,0.1,0,corners,dijkstra,dfs,end_to_end,100,0,15.377373,17.437145,12.995435,19.230814,6.235379,15.802425,0.0000
+random_100x100_obs0.1_ter0_corners,random,100,100,0.1,0,corners,astar,bfs,search,100,0,0.840298,1.590979,0.645459,1.064778,0.419319,0.933412,0.6800
+random_100x100_obs0.1_ter0_corners,random,100,100,0.1,0,corners,astar,bfs,end_to_end,100,0,0.870346,1.619247,0.672894,1.090089,0.417195,0.966251,0.6500
+random_100x100_obs0.1_ter0_corners,random,100,100,0.1,0,corners,astar,dfs,search,100,0,2.460868,3.037224,1.925095,3.399278,1.474183,2.639657,0.0100
+random_100x100_obs0.1_ter0_corners,random,100,100,0.1,0,corners,astar,dfs,end_to_end,100,0,2.468649,3.032559,1.951496,3.380402,1.428906,2.655184,0.0100
+random_100x100_obs0.1_ter0_corners,random,100,100,0.1,0,corners,bfs,dfs,search,100,0,2.751489,3.135150,2.360039,3.436071,1.076032,2.827964,0.0400
+random_100x100_obs0.1_ter0_corners,random,100,100,0.1,0,corners,bfs,dfs,end_to_end,100,0,2.695017,3.021620,2.307484,3.334789,1.027305,2.747923,0.0400

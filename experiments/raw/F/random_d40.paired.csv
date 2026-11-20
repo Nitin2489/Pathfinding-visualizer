@@ -1,0 +1,13 @@
+scenario_id,scenario_type,rows,columns,obstacle_density,terrain_density,placement,algorithm_a,algorithm_b,timing,grids_compared,grids_excluded,ratio_a_over_b_median,ratio_a_over_b_mean,ratio_a_over_b_q1,ratio_a_over_b_q3,ratio_a_over_b_iqr,ratio_a_over_b_geomean,a_faster_fraction
+random_100x100_obs0.4_ter0_random,random,100,100,0.4,0,random,dijkstra,astar,search,100,0,0.879182,1.268645,0.790995,1.312742,0.521747,1.094266,0.6000
+random_100x100_obs0.4_ter0_random,random,100,100,0.4,0,random,dijkstra,astar,end_to_end,100,0,0.987161,1.203330,0.815399,1.266464,0.451064,1.084556,0.5500
+random_100x100_obs0.4_ter0_random,random,100,100,0.4,0,random,dijkstra,bfs,search,100,0,2.877498,3.098464,2.679206,3.307065,0.627859,3.035609,0.0000
+random_100x100_obs0.4_ter0_random,random,100,100,0.4,0,random,dijkstra,bfs,end_to_end,100,0,2.966306,3.055618,2.744821,3.286928,0.542106,3.022966,0.0000
+random_100x100_obs0.4_ter0_random,random,100,100,0.4,0,random,dijkstra,dfs,search,100,0,2.625620,3.100077,2.216568,3.384338,1.167770,2.687224,0.0300
+random_100x100_obs0.4_ter0_random,random,100,100,0.4,0,random,dijkstra,dfs,end_to_end,100,0,2.628387,3.061501,2.397382,3.049115,0.651733,2.728089,0.0300
+random_100x100_obs0.4_ter0_random,random,100,100,0.4,0,random,astar,bfs,search,100,0,3.361623,3.059114,2.038285,3.738400,1.700115,2.774104,0.0500
+random_100x100_obs0.4_ter0_random,random,100,100,0.4,0,random,astar,bfs,end_to_end,100,0,3.277283,2.985006,2.294531,3.529904,1.235373,2.787284,0.0400
+random_100x100_obs0.4_ter0_random,random,100,100,0.4,0,random,astar,dfs,search,100,0,2.976551,2.896543,2.185358,3.503835,1.318477,2.455731,0.0700
+random_100x100_obs0.4_ter0_random,random,100,100,0.4,0,random,astar,dfs,end_to_end,100,0,2.875129,2.852994,2.403031,3.312861,0.909830,2.515397,0.0600
+random_100x100_obs0.4_ter0_random,random,100,100,0.4,0,random,bfs,dfs,search,100,0,0.866658,1.023812,0.773757,1.049598,0.275840,0.885234,0.7300
+random_100x100_obs0.4_ter0_random,random,100,100,0.4,0,random,bfs,dfs,end_to_end,100,0,0.853669,1.015584,0.790516,1.006836,0.216320,0.902454,0.7500

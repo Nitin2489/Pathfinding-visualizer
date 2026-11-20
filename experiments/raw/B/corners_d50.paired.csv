@@ -1,0 +1,13 @@
+scenario_id,scenario_type,rows,columns,obstacle_density,terrain_density,placement,algorithm_a,algorithm_b,timing,grids_compared,grids_excluded,ratio_a_over_b_median,ratio_a_over_b_mean,ratio_a_over_b_q1,ratio_a_over_b_q3,ratio_a_over_b_iqr,ratio_a_over_b_geomean,a_faster_fraction
+random_100x100_obs0.5_ter0_corners,random,100,100,0.5,0,corners,dijkstra,astar,search,50,0,0.955661,0.938944,0.891581,1.001175,0.109594,0.932459,0.7400
+random_100x100_obs0.5_ter0_corners,random,100,100,0.5,0,corners,dijkstra,astar,end_to_end,50,0,1.000053,0.990944,0.986695,1.012269,0.025574,0.989886,0.5000
+random_100x100_obs0.5_ter0_corners,random,100,100,0.5,0,corners,dijkstra,bfs,search,50,0,3.625046,3.612228,3.057830,4.116394,1.058564,3.548712,0.0000
+random_100x100_obs0.5_ter0_corners,random,100,100,0.5,0,corners,dijkstra,bfs,end_to_end,50,0,3.391920,3.420398,3.311803,3.439922,0.128119,3.414259,0.0000
+random_100x100_obs0.5_ter0_corners,random,100,100,0.5,0,corners,dijkstra,dfs,search,50,0,2.834379,2.808610,2.432220,3.105818,0.673597,2.768299,0.0000
+random_100x100_obs0.5_ter0_corners,random,100,100,0.5,0,corners,dijkstra,dfs,end_to_end,50,0,2.780787,2.780336,2.719088,2.842567,0.123479,2.778620,0.0000
+random_100x100_obs0.5_ter0_corners,random,100,100,0.5,0,corners,astar,bfs,search,50,0,3.746257,3.891439,3.380891,4.345593,0.964702,3.805756,0.0000
+random_100x100_obs0.5_ter0_corners,random,100,100,0.5,0,corners,astar,bfs,end_to_end,50,0,3.384155,3.460933,3.309298,3.489839,0.180541,3.449143,0.0000
+random_100x100_obs0.5_ter0_corners,random,100,100,0.5,0,corners,astar,dfs,search,50,0,3.026748,3.004035,2.627502,3.267048,0.639546,2.968815,0.0000
+random_100x100_obs0.5_ter0_corners,random,100,100,0.5,0,corners,astar,dfs,end_to_end,50,0,2.778257,2.811287,2.726485,2.852777,0.126291,2.807010,0.0000
+random_100x100_obs0.5_ter0_corners,random,100,100,0.5,0,corners,bfs,dfs,search,50,0,0.774699,0.799160,0.705328,0.915253,0.209925,0.780086,0.8800
+random_100x100_obs0.5_ter0_corners,random,100,100,0.5,0,corners,bfs,dfs,end_to_end,50,0,0.811550,0.814682,0.797391,0.837090,0.039699,0.813828,1.0000

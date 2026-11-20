@@ -1,0 +1,3 @@
+scenario_id,scenario_type,rows,columns,obstacle_density,terrain_density,placement,algorithm_a,algorithm_b,timing,grids_compared,grids_excluded,ratio_a_over_b_median,ratio_a_over_b_mean,ratio_a_over_b_q1,ratio_a_over_b_q3,ratio_a_over_b_iqr,ratio_a_over_b_geomean,a_faster_fraction
+random_200x200_obs0.2_ter0.3_reachable,random,200,200,0.2,0.3,reachable,dijkstra,astar,search,100,0,3.141409,3.458492,2.159306,4.438381,2.279075,3.131669,0.0000
+random_200x200_obs0.2_ter0.3_reachable,random,200,200,0.2,0.3,reachable,dijkstra,astar,end_to_end,100,0,2.991016,3.196698,2.102726,4.115685,2.012959,2.940688,0.0000
