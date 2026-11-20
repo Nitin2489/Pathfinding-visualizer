@@ -7,50 +7,56 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
-    name: ${{ matrix.os }}-build
+  build-and-test:
+    name: ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
+      fail-fast: false
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
         include:
           - os: ubuntu-latest
-            c_compiler: gcc
-            cxx_compiler: g++
-            shell: bash
-          - os: windows-latest
-            c_compiler: cl
-            cxx_compiler: cl
-            shell: cmd
+            werror: ON
           - os: macos-latest
-            c_compiler: clang
-            cxx_compiler: clang++
-            shell: bash
+            werror: ON
+          # MSVC builds at /W4; warnings are reported but not fatal.
+          - os: windows-latest
+            werror: OFF
+    defaults:
+      run:
+        shell: bash
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
-    - name: Set up MSVC environment (Windows only)
-      if: matrix.os == 'windows-latest'
-      uses: ilammy/msvc-dev-cmd@v1
-
-    - name: Configure CMake
-      run: |
-        cmake -S ${{ github.workspace }} -B ${{ github.workspace }}/build \
-              -DCMAKE_C_COMPILER=${{ matrix.c_compiler }} \
-              -DCMAKE_CXX_COMPILER=${{ matrix.cxx_compiler }}
-      shell: ${{ matrix.shell }}
+    - name: Configure
+      run: cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DPATHFINDING_WERROR=${{ matrix.werror }}
 
     - name: Build
-      run: cmake --build ${{ github.workspace }}/build
-      shell: ${{ matrix.shell }}
+      run: cmake --build build --config Release --parallel
 
-    - name: Run basic check
+    # Unit tests, CLI validation and an end-to-end benchmark smoke run
+    # (exits non-zero if any correctness check fails).
+    - name: Test
+      run: ctest --test-dir build -C Release --output-on-failure
+
+    - name: Reproducibility check
       run: |
-        cd ${{ github.workspace }}/build
-        if [ -f PathfindingVisualizer ]; then
-          ./PathfindingVisualizer || true
-        elif [ -f Debug/PathfindingVisualizer.exe ]; then
-          ./Debug/PathfindingVisualizer.exe || true
-        fi
-      shell: ${{ matrix.shell }}
+        exe=build/pathfinding
+        [ -f build/Release/pathfinding.exe ] && exe=build/Release/pathfinding.exe
+        "$exe" --benchmark --suite all --grids 2 --runs 4 --warmup 0 --quiet --csv a.csv
+        "$exe" --benchmark --suite all --grids 2 --runs 4 --warmup 0 --quiet --csv b.csv
+        # Everything except the two timing columns (29: search_time_ms,
+        # 30: end_to_end_time_ms) must be identical, on every platform.
+        diff <(cut -d, -f1-28,31- a.csv) <(cut -d, -f1-28,31- b.csv)
+
+  sanitizers:
+    name: ubuntu-asan-ubsan
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Configure
+      run: cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug -DPATHFINDING_SANITIZE=ON -DPATHFINDING_WERROR=ON
+    - name: Build
+      run: cmake --build build --parallel
+    - name: Test
+      run: ctest --test-dir build --output-on-failure
