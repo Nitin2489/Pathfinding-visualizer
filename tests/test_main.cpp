@@ -503,8 +503,8 @@ TEST(grid_dimension_validation) {
     CHECK(throwsInvalidArgument([] { Grid g(-5, 10); }));
     CHECK(throwsInvalidArgument([] { Grid g(10, -5); }));
     // rows * cols overflows a 32-bit int: must be rejected before allocating.
-    CHECK(throwsInvalidArgument([big] { Grid g(big, big); }));
-    CHECK(throwsInvalidArgument([big] { Grid g(big, 3); }));
+    CHECK(throwsInvalidArgument([] { Grid g(std::numeric_limits<int>::max(), std::numeric_limits<int>::max()); }));
+    CHECK(throwsInvalidArgument([] { Grid g(std::numeric_limits<int>::max(), 3); }));
     CHECK(throwsInvalidArgument([] { Grid g(46341, 46341); }));  // 2,147,488,281 > INT_MAX
     // Just above the limit without overflowing.
     CHECK(throwsInvalidArgument([] { Grid g(static_cast<int>(Grid::kMaxCells / 3 + 1), 3); }));
