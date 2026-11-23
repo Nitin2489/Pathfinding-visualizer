@@ -1,4 +1,4 @@
-# Pathfinding Visualizer & Benchmark
+# Pathfinding Visualizer
 
 [![C++ CI](https://github.com/Nitin2489/pathfinding-visualizer/actions/workflows/build.yml/badge.svg)](https://github.com/Nitin2489/pathfinding-visualizer/actions/workflows/build.yml)
 ![C++17](https://img.shields.io/badge/C%2B%2B-17-blue)
